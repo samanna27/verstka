@@ -20,8 +20,6 @@ mainNav.addEventListener('click', function() {
 const onFormElementSubmit = (evt) => {
   evt.preventDefault();
   const formData = new FormData(evt.target);
-  //eslint-disable-next-line
-  console.log('sending data', formData, formValid);
 
   if(formValid) {
     sendData(formData);
