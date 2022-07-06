@@ -1,0 +1,54 @@
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+
+  & h1 {
+    align-self: flex-start;
+    margin: 0 20px;
+  }
+
+  & a {
+    align-self: flex-start;
+    margin: 24px 20px 32px;
+    text-decoration: none;
+    color: @blue;
+  }
+}
+
+.main-container__button-back {
+  display: block;
+}
+
+@media (min-width: @tablet-width) {
+  .main-container{
+    padding: 0 20px;
+    margin: 0 auto;
+
+    & a {
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+    & h1 {
+      margin: 0;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-container{
+
+    & a {
+      margin-bottom: 48px;
+    }
+
+    & h1 {
+      font-size: 40px;
+    }
+  }
+}

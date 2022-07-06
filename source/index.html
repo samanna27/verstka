@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Верстка</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body class="page__body">
+    <header class="main-header">
+      <a class="main-header__logo">
+        <img class="main-header__logo-image" src="img/Union.png" width="27" height="38" alt="Находка 2030">Находка 2030
+      </a>
+      <nav class="main-nav main-nav--nojs">
+        <button class="main-nav__burger" type="button">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M0 2C0 0.895431 0.895431 0 2 0C3.10457 0 4 0.895431 4 2C4 3.10457 3.10457 4 2 4C0.895431 4 0 3.10457 0 2ZM0 8C0 6.89543 0.895431 6 2 6C3.10457 6 4 6.89543 4 8C4 9.10457 3.10457 10 2 10C0.895431 10 0 9.10457 0 8ZM2 12C0.895431 12 0 12.8954 0 14C0 15.1046 0.895431 16 2 16C3.10457 16 4 15.1046 4 14C4 12.8954 3.10457 12 2 12ZM6 2C6 0.895431 6.89543 0 8 0C9.10457 0 10 0.895431 10 2C10 3.10457 9.10457 4 8 4C6.89543 4 6 3.10457 6 2ZM8 6C6.89543 6 6 6.89543 6 8C6 9.10457 6.89543 10 8 10C9.10457 10 10 9.10457 10 8C10 6.89543 9.10457 6 8 6ZM6 14C6 12.8954 6.89543 12 8 12C9.10457 12 10 12.8954 10 14C10 15.1046 9.10457 16 8 16C6.89543 16 6 15.1046 6 14ZM14 0C12.8954 0 12 0.895431 12 2C12 3.10457 12.8954 4 14 4C15.1046 4 16 3.10457 16 2C16 0.895431 15.1046 0 14 0ZM12 8C12 6.89543 12.8954 6 14 6C15.1046 6 16 6.89543 16 8C16 9.10457 15.1046 10 14 10C12.8954 10 12 9.10457 12 8ZM14 12C12.8954 12 12 12.8954 12 14C12 15.1046 12.8954 16 14 16C15.1046 16 16 15.1046 16 14C16 12.8954 15.1046 12 14 12Z" fill="#A6AFB6"/>
+          </svg>
+          Меню
+        </button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list">
+            <li class="main-nav__item main-nav__item--active">
+              <a href="/">О Находке</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#">Пройдите опрос</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#">Проекты Находки</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#">Обсуждения</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#">Новости</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="main-container">
+      <a class="main-container__link-back" href="#" alt="Назад">
+        <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M6 1L1 6L6 11" stroke="#3FA6F6" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+        Назад
+      </a>
+      <h1 class="main-container__header">Поделитесь идеей</h1>
+      <form class="form-review">
+        <fieldset class="form-review__section">
+          <legend class="form-review__section-header">
+            <span class="form-review__section-header-index">1</span>
+            Расскажите, кем вы приходитесь городу
+          </legend>
+          <ul class="form-review__section-list">
+            <li class="form-review__section-item">
+              <input class="form-review__input-radio citizenship" type="radio" id="citizenship-choice1" name="citizenship" value="local">
+              <label class="form-review__label form-review__label--optional" for="citizenship-choice1">Местный житель</label>
+            </li>
+            <li class="form-review__section-item">
+              <input class="form-review__input-radio" type="radio" id="citizenship-choice2" name="citizenship" value="guest">
+              <label class="form-review__label form-review__label--optional" for="citizenship-choice2">Гость города</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="form-review__section">
+          <legend class="form-review__section-header">
+            <span class="form-review__section-header-index">2</span>
+            Ваш возраст
+          </legend>
+          <ul class="form-review__section-list">
+            <li class="form-review__section-item">
+              <input class="form-review__input-radio age" type="radio" id="age-choice1" name="age" value="below 18">
+              <label class="form-review__label form-review__label--optional" for="age-choice1">До 18</label>
+            </li>
+            <li class="form-review__section-item">
+              <input class="form-review__input-radio" type="radio" id="age-choice2" name="age" value="19-25">
+              <label class="form-review__label form-review__label--optional" for="age-choice2">19-25</label>
+            </li>
+            <li class="form-review__section-item">
+              <input class="form-review__input-radio" type="radio" id="age-choice3" name="age" value="26-35">
+              <label class="form-review__label form-review__label--optional" for="age-choice3">26-35</label>
+            </li>
+            <li class="form-review__section-item">
+              <input class="form-review__input-radio" type="radio" id="age-choice4" name="age" value="36-45">
+              <label class="form-review__label form-review__label--optional" for="age-choice4">36-45</label>
+            </li>
+            <li class="form-review__section-item">
+              <input class="form-review__input-radio" type="radio" id="age-choice5" name="age" value="46-55">
+              <label class="form-review__label form-review__label--optional" for="age-choice5">46-55</label>
+            </li>
+            <li class="form-review__section-item">
+              <input class="form-review__input-radio" type="radio" id="age-choice6" name="age" value="56-65">
+              <label class="form-review__label form-review__label--optional" for="age-choice6">56-65</label>
+            </li>
+            <li class="form-review__section-item">
+              <input class="form-review__input-radio" type="radio" id="age-choice7" name="age" value="Больше 66">
+              <label class="form-review__label form-review__label--optional" for="age-choice7">Больше 66</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="form-review__section">
+          <legend class="form-review__section-header">
+            <span class="form-review__section-header-index">3</span>
+            Вы хотите рассказать
+          </legend>
+          <ul class="form-review__section-list">
+            <li class="form-review__section-item">
+              <input class="form-review__input-radio subject" type="radio" id="subject-choice1" name="subject" value="About problem">
+              <label class="form-review__label form-review__label--optional" for="subject-choice1">О проблеме и ее решении</label>
+            </li>
+            <li class="form-review__section-item">
+              <input class="form-review__input-radio" type="radio" id="subject-choice2" name="subject" value="About city">
+              <label class="form-review__label form-review__label--optional" for="subject-choice2">О идее города</label>
+            </li>
+            <li class="form-review__section-item">
+              <input class="form-review__input-radio" type="radio" id="subject-choice3" name="subject" value="About city-sight">
+              <label class="form-review__label form-review__label--optional" for="subject-choice3">Об уникальных интересных местах Находки</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="form-review__section">
+          <legend class="form-review__section-header">
+            <span class="form-review__section-header-index">4</span>
+            Загрузите картинку и укажите место на карте
+          </legend>
+          <div class="form-review__inner-container">
+            <div class="form-review__map" alt="указать место на карте">
+              <svg width="15" height="20" viewBox="0 0 15 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6.40272 18.7682C4.41685 16.3544 0 10.5043 0 7.21829C0 3.23147 3.27022 -0.000391006 7.30435 -0.000391006C11.337 -0.000391006 14.6087 3.23147 14.6087 7.21829C14.6087 10.5043 10.1576 16.3544 8.20598 18.7682C7.73804 19.3434 6.87065 19.3434 6.40272 18.7682ZM7.30435 9.62452C8.64728 9.62452 9.73913 8.54547 9.73913 7.21829C9.73913 5.89111 8.64728 4.81206 7.30435 4.81206C5.96141 4.81206 4.86957 5.89111 4.86957 7.21829C4.86957 8.54547 5.96141 9.62452 7.30435 9.62452Z" fill="#028AF3"/>
+              </svg>
+             <span class="form-review__map-legend">Указать геолокацию</span>
+            </div>
+            <div class="form-review__preview">
+              <input type="file" id="add-image" name="add-image" class="form-review__preview-input visually-hidden"/>
+              <input class="toReportValidity"/>
+              <label class="form-review__preview-drop-zone" for="add-image">
+                <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M17.496 0H2.46954C1.12108 0 0 1.12111 0 2.5044V15.0264C0 16.4097 1.12111 17.5308 2.46918 17.5308H17.4956C18.8789 17.5308 20 16.4097 20 15.0264V2.5044C20.0004 1.12111 18.9125 0 17.496 0ZM4.34784 2.5044C5.38521 2.5044 6.22614 3.34533 6.22614 4.3827C6.22614 5.42007 5.42004 6.26101 4.34784 6.26101C3.27564 6.26101 2.46954 5.42007 2.46954 4.3827C2.46954 3.34533 3.3453 2.5044 4.34784 2.5044ZM17.4568 14.6977C17.3473 14.9012 17.1359 15.0264 16.9051 15.0264H3.20951C2.9739 15.0264 2.75833 14.8942 2.6515 14.684C2.54467 14.474 2.56482 14.2219 2.7037 14.0313L5.44289 10.2747C5.56091 10.1115 5.74874 10.0176 5.94831 10.0176C6.14788 10.0176 6.33634 10.1131 6.45428 10.2749L7.72448 12.0166L11.3754 6.57343C11.4932 6.36666 11.6889 6.26101 11.8963 6.26101C12.1037 6.26101 12.3013 6.36556 12.4171 6.53982L17.4259 14.053C17.5546 14.2438 17.5664 14.4903 17.4568 14.6977Z" fill="#028AF3"/>
+                </svg>
+                <span class="form-review__preview-legend">
+                  Добавить изображение
+                </span>
+              </label>
+            </div>
+          </div>
+        </fieldset>
+        <fieldset class="form-review__section">
+          <legend class="form-review__section-header">
+            <span class="form-review__section-header-index">5</span>
+            Укажите тему и расскажите идею
+          </legend>
+          <div class="form-review__section-wrap">
+            <textarea class="form-review__comment-topic" placeholder="Тема" required></textarea>
+            <textarea class="form-review__comment-content" placeholder="Идея" required></textarea>
+            <div class=form-review__data-policy>
+              <input class="form-review__input-checkbox" type="checkbox" id="data-policy" name="data-policy" value="Agree with data policy" required>
+              <label class="form-review__label form-review__label--optional" for="data-policy">Я согласен с <a class="form-review__link" href="#" alt="data processing policy">политикой обработки персональных данных</a></label>
+            </div>
+          </div>
+        </fieldset>
+        <div class="form-review__submit-section">
+          <button class="form-review__button" type="submit">Отправить</button>
+        </div>
+      </form>
+    </main>
+    <footer class="main-footer">
+      <div class="main-footer__wrapper">
+          <a class="main-footer__logo">
+            <svg class="main-footer__logo-image" width="56" height="80" viewBox="0 0 56 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M27.7885 16.3462C30.4968 16.3462 32.6923 14.1506 32.6923 11.4423C32.6923 8.73399 30.4968 6.53846 27.7885 6.53846C25.0801 6.53846 22.8846 8.73399 22.8846 11.4423C22.8846 14.1506 25.0801 16.3462 27.7885 16.3462ZM39.2308 11.4423C39.2308 16.6257 35.7842 21.0041 31.0577 22.4108V27.7885H42.5V34.3269H31.0577V69.2665C31.0777 69.2619 31.0977 69.2574 31.1177 69.2529C33.442 68.7325 36.2541 68.767 38.3426 68.7926C38.7562 68.7977 39.1414 68.8025 39.4889 68.8025C42.26 68.8025 44.8236 68.6235 46.6392 67.8194C47.4739 67.4497 48.0177 67.0018 48.3699 66.4803C48.715 65.9694 49.0385 65.1489 49.0385 63.75V58.0288H42.5V51.4904H55.5769V52.3077V58.0288V63.75C55.5769 66.2147 54.9863 68.3662 53.7882 70.1401C52.5972 71.9033 50.9687 73.0529 49.2869 73.7978C46.0696 75.2227 42.2238 75.3409 39.4889 75.3409C38.9683 75.3409 38.4606 75.3363 37.9668 75.3319L37.9652 75.3319C35.8837 75.3132 34.0503 75.2967 32.5463 75.6334C31.6783 75.8278 31.3254 76.0673 31.2114 76.1775L31.2085 76.1799C31.1853 76.1984 31.0577 76.3001 31.0577 76.8269V79.2788H24.5192V76.8269C24.5192 76.3001 24.3916 76.1984 24.3684 76.1799L24.3655 76.1775C24.2516 76.0673 23.8986 75.8278 23.0306 75.6334C21.5266 75.2967 19.6932 75.3132 17.6117 75.3319L17.6101 75.3319C17.1163 75.3363 16.6086 75.3409 16.0881 75.3409C13.3532 75.3409 9.50728 75.2227 6.28999 73.7978C4.60825 73.0529 2.97972 71.9033 1.78873 70.1401C0.590623 68.3662 0 66.2147 0 63.75V58.0288V52.3077V51.4904H13.0769V58.0288H6.53846V63.75C6.53846 65.1489 6.86193 65.9694 7.20703 66.4803C7.55925 67.0018 8.10304 67.4497 8.93775 67.8194C10.7534 68.6235 13.3169 68.8025 16.0881 68.8025C16.4355 68.8025 16.8207 68.7977 17.2343 68.7926C19.3228 68.767 22.1349 68.7325 24.4593 69.2529C24.4792 69.2574 24.4992 69.2619 24.5192 69.2665V34.3269H13.0769V27.7885H24.5192V22.4108C19.7928 21.0041 16.3462 16.6257 16.3462 11.4423C16.3462 5.1229 21.469 0 27.7885 0C34.1079 0 39.2308 5.1229 39.2308 11.4423Z" fill="#C5DDEE"/>
+            </svg>
+            Находка 2030
+          </a>
+          <ul class="main-nav__list main-nav__list--footer">
+            <li class="main-nav__item main-nav__item--footer">
+              <a href="/">О Находке</a>
+            </li>
+            <li class="main-nav__item main-nav__item--footer">
+              <a href="#">Пройдите опрос</a>
+            </li>
+            <li class="main-nav__item main-nav__item--footer">
+              <a href="#">План комплексного<br /> развития</a>
+            </li>
+            <li class="main-nav__item main-nav__item--footer">
+              <a href="#">Обсуждения</a>
+            </li>
+            <li class="main-nav__item main-nav__item--footer">
+              <a href="#">Новости</a>
+            </li>
+          </ul>
+        <div class="main-footer__contacts">
+          <div class="main-footer__contacts-email">
+            <svg width="20" height="15" viewBox="0 0 20 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M18.125 0C19.1602 0 20 0.839453 20 1.875C20 2.46484 19.7227 3.01953 19.25 3.375L10.75 9.75C10.3047 10.082 9.69531 10.082 9.25 9.75L0.75 3.375C0.277852 3.01953 0 2.46484 0 1.875C0 0.839453 0.839453 0 1.875 0H18.125ZM8.5 10.75C9.39062 11.418 10.6094 11.418 11.5 10.75L20 4.375V12.5C20 13.8789 18.8789 15 17.5 15H2.5C1.11914 15 0 13.8789 0 12.5V4.375L8.5 10.75Z" fill="#028AF3"/>
+            </svg>
+            <a class="main-footer__contacts-email-link" href="call@my-nakhodka.ru">call@my-nakhodka.ru</a>
+          </div>
+          <a class="main-footer__contacts-policy" href="#" alt="data processing policy">Политика обработки персональных данных</a>
+        </div>
+      </div>
+    </footer>
+    <!-- Сообщение об успешной отправке -->
+  <template id="success">
+    <div class="success">
+      <p class="success__message">Ваше форма<br>успешно отправлена!</p>
+    </div>
+  </template>
+
+  <!-- Сообщение об ошибке -->
+  <template id="error">
+    <div class="error">
+      <p class="error__message">Ошибка отправки формы</p>
+      <button type="button" class="error__button">Попробовать снова</button>
+    </div>
+  </template>
+    <script src="js/script.js" type="module"></script>
+  </body>
+</html>
